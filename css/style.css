@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav, .banner, footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVIGATOR */
+
+nav {
+    top:0;
+    position:-webkit-sticky;
+    position:sticky;
+    background-color:white;
+    z-index: 2;
+}
+
+nav .container {
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.nav-logo img {
+    height: 45px;
+}
+
+.nav-logo a {
+    margin-left: 20px;
+    display: block;
+    font-weight: 700;
+    line-height: 22px;
+    color: #607AFF;
+}
+
+.nav-logo :hover {
+    color: #607AFF;
+}
+
+.menu {
+    display: inline-flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.active {
+    font-weight: 700 !important;
+}
+
+.menu > ol :last-child {
+    margin-right: 0;
+}
+
+.menu ol a {
+    transition: all 0.3 ease;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.menu > ol a {
+    padding: 15px 30px 15px 30px;
+}
+
+.sub-menu {
+    background-color: white;
+    width: 250px;
+    visibility: inherit;
+    position: absolute;
+    display: none;
+}
+
+.sub-menu ol a {
+    line-height: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.sub-menu ol {
+    width: 100%;
+}
+
+.menu > ol a:hover {
+    transition: all 0.3 ease;
+    background-color: #657DFF;
+    color: white;
+}
+
+.sub-menu ol a:hover {
+    transition: all 0.3 ease;
+    background-color: #657DFF;
+    color: white;
+}
+
+.menu ol:hover > .sub-menu {
+    display: block;
+}
+
+/* BANNER */
+
+.banner {
+    background: linear-gradient(94.03deg, #657DFF 0%, #7BA0FF 100%);
+}
+
+.banner .container {
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.banner-image {
+    padding-right: 10%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-text {
+    margin: 10px 0 30px 0;
+    width: 370px;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description-button {
+    border: none;
+    background: #A8BFFF;
+}
+
+.description-button :hover {
+    background-color: #657DFF;
+    color: white;
+}
+
+.description-button a {
+
+    display: inline-block;
+    padding: 16px 145px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 22px;
+
+    text-transform: uppercase;
+    color: #607AFF;
+}
+
+/* FOOTER */
+
+footer {
+    background: #89A9FF;
+    align-items: center;
+    height: 58px;
+    color: white;
+    font-family: 'Gotham Pro', sans-serif;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+footer .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer a {
+    color:white;
+}
+
+/* MEDIA */
+
+@media (max-width: 1000px) {
+    .banner-image {padding-right: 0px;}
+    .description-button {
+        text-align: center;
+        width: 70%;
+    }
+    .description-button a {
+        padding: 16px 0 16px 0;
+    }
+    .nav-logo {
+        margin-top: 10px;
+    }
+    
+}
+@media (max-width: 1380px){
+    .nav-logo {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    footer .container {
+        justify-content: center;
+    }
+}
