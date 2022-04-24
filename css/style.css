@@ -165,31 +165,37 @@ nav .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40%;
 }
 
 .description-text {
+    width: 90%;
     margin: 10px 0 30px 0;
-    width: 370px;
     font-size: 20px;
     line-height: 110%;
     text-align: center;
     color: #FFFFFF;
 }
+.description-text h1 {
+    width: 90%;
+}
 
 .description-button {
     border: none;
     background: #A8BFFF;
+    width: 90%;
 }
 
-.description-button :hover {
+.description-button a:hover {
     background-color: #657DFF;
     color: white;
 }
 
 .description-button a {
-
-    display: inline-block;
-    padding: 16px 145px;
+    text-align: center;
+    width: 100%;
+    padding: 16px 0 16px 0;
+    display: block;
     text-decoration: none;
     font-weight: 700;
     line-height: 22px;
@@ -221,23 +227,32 @@ footer a {
 
 /* MEDIA */
 
-@media (max-width: 1000px) {
-    .banner-image {padding-right: 0px;}
-    .description-button {
-        text-align: center;
-        width: 70%;
-    }
-    .description-button a {
-        padding: 16px 0 16px 0;
-    }
-    .nav-logo {
-        margin-top: 10px;
-    }
-    
-}
 @media (max-width: 1380px){
     .nav-logo {
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner-image {padding-right: 0px;}
+    .nav-logo {
+        margin-top: 10px;
+    }
+    .description {
+        width: 100%;
+    }
+    .description-button {
+        width: 50%;
+    }
+    .container {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 600px){
+    nav {
+        position: relative;
     }
 }
 

@@ -4,7 +4,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    padding: 46px 100px 46px 100px;
+    padding: 46px 10% 46px 10%;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -121,7 +121,7 @@
 .block-icon {
     position: absolute;
     left: 0;
-    top: -10%;
+    top: -8%;
     z-index: 0;
 }
 .comparison-block .block-name, .block-text {
@@ -141,13 +141,13 @@
     }
 }
 
-@media (max-width: 1343px){
+@media (max-width: 1443px){
     .comparison-block {
         width: 60%;
         margin-right: 0;
         margin-bottom: 5%;
     }
-    .comparison-block:last-child {
+    .blocks-row {
         margin-bottom: 0;
     }
 }
