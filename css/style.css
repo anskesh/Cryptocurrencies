@@ -30,6 +30,7 @@ h2 {
     line-height: 23px;
     color: #000000;
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -93,11 +94,15 @@ nav .container {
     font-weight: 700 !important;
 }
 
-.menu > ol :last-child {
+.menu > li :last-child {
     margin-right: 0;
 }
 
-.menu ol a {
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
     transition: all 0.3 ease;
     display: block;
     text-decoration: none;
@@ -106,7 +111,7 @@ nav .container {
     color: #000000;
 }
 
-.menu > ol a {
+.menu > li a {
     padding: 15px 30px 15px 30px;
 }
 
@@ -118,28 +123,28 @@ nav .container {
     display: none;
 }
 
-.sub-menu ol a {
+.sub-menu li a {
     line-height: 20px;
     padding: 10px 20px 10px 20px;
 }
 
-.sub-menu ol {
+.sub-menu li {
     width: 100%;
 }
 
-.menu > ol a:hover {
+.menu > li a:hover {
     transition: all 0.3 ease;
     background-color: #657DFF;
     color: white;
 }
 
-.sub-menu ol a:hover {
+.sub-menu li a:hover {
     transition: all 0.3 ease;
     background-color: #657DFF;
     color: white;
 }
 
-.menu ol:hover > .sub-menu {
+.menu li:hover > .sub-menu {
     display: block;
 }
 
