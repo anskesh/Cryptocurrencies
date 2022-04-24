@@ -231,6 +231,10 @@ footer a {
     color:white;
 }
 
+.footer-link {
+    margin-right: 5%;
+}
+
 /* MEDIA */
 
 @media (max-width: 1380px){
